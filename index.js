@@ -20,15 +20,18 @@ const questions = [
 ];
 // // TODO: Create a function to write README file
 function writeToFile(fileName, answers) {
-    fs.writeFile('/read-me-generator.examplerm.md', generateMarkdown())
+    fs.writeFile('read-me-generator.examplerm.md', answers, function (err) {
+        if (err) throw err;
+        console.log('file written');
+        
+    })
 };
 
 // // TODO: Create a function to initialize app
 function init() { 
     inquirer.prompt(questions).then((answers) => {
-        generateMarkdown(answers);
-        writeToFile('', answers)
-        console.log(JSON.stringify(answers, null, '  '));
+        const markdown = generateMarkdown(answers);
+        writeToFile('', JSON.stringify(markdown));
     });
     
 }
