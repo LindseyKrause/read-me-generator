@@ -15,7 +15,25 @@ const questions = [
         name: 'description',
         message: "Enter your description. At a minimum, your project README needs a title and a short description explaining the what, why, and how. What was your motivation? Why did you build this project? What problem does it solve? What did you learn? What makes your project stand out?",
     },
-
+    {
+        type: 'checkbox',
+        name: 'License',
+        message: "Which license does your project have?",
+        choices: [
+            {
+                name: 'MIT',
+            },
+            {
+                name: 'GNU',
+            },{
+                name: 'Apache',
+            },{
+                name: 'ISC',
+            },{
+                name: 'None',
+            },
+        ]
+    },
 
 ];
 // // TODO: Create a function to write README file
@@ -30,8 +48,11 @@ function writeToFile(fileName, answers) {
 // // TODO: Create a function to initialize app
 function init() { 
     inquirer.prompt(questions).then((answers) => {
+        generateMarkdown(answers);
+        // renderLicenseBadge(answers);
+        // const generateLicense = renderLicenseBadge(answers);
         const markdown = generateMarkdown(answers);
-        writeToFile('', JSON.stringify(markdown));
+        writeToFile('', (markdown));
     });
     
 }
