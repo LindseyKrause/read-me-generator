@@ -49,7 +49,6 @@ function writeToFile(fileName, answers) {
 function init() { 
     inquirer.prompt(questions).then((answers) => {
         generateMarkdown(answers);
-        // renderLicenseBadge(answers);
         // const generateLicense = renderLicenseBadge(answers);
         const markdown = generateMarkdown(answers);
         writeToFile('', (markdown));
