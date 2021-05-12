@@ -17,7 +17,7 @@ const questions = [
     },
     {
         type: 'checkbox',
-        name: 'License',
+        name: 'license',
         message: "Which license does your project have?",
         choices: [
             {
@@ -48,7 +48,6 @@ function writeToFile(fileName, answers) {
 // // TODO: Create a function to initialize app
 function init() { 
     inquirer.prompt(questions).then((answers) => {
-        generateMarkdown(answers);
         // const generateLicense = renderLicenseBadge(answers);
         const markdown = generateMarkdown(answers);
         writeToFile('', (markdown));
