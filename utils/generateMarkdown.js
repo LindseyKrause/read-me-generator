@@ -44,17 +44,17 @@ ${data.installation}
 ${data.usage}
 
 ## Credits
-${data.credits-collaborators}
-${data.credits-thirdparty}
-${data.credits-tutorials}
+${data.creditscollaborators}
+${data.creditsthirdparty}
+${data.creditstutorials}
 
 ## License
 ${renderLicense(data)}
-${data.license-description}
+${data.licensedescription}
 
 ## Questions
-${data.github-userid}
-${data.github-link}
+${data.githubuserid}
+${data.githublink}
 ${data.email}
  `
 }

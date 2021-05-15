@@ -32,19 +32,19 @@ const questions = [
         message: "Provide instructions and examples for use."
     },{
         type: 'input',
-        name: 'credits-collaborators',
+        name: 'creditscollaborators',
         message: "List your collaborators, if any, with links to their GitHub profiles.",
     },{
         type: 'input',
-        name: 'credits-thirdparty',
+        name: 'creditsthirdparty',
         message: "If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.",
     },{
-        type: 'credits-tutorials',
-        name: 'description',
+        type: 'input',
+        name: 'creditstutorials',
         message: "If you followed tutorials, include links to those here.",
     },{
         type: 'input',
-        name: 'license-description',
+        name: 'licensedescription',
         message: "In addition to what license your project holds, provide any information that will let other developers know what they can and can't do with your project",
     },{
         type: 'input',
@@ -53,12 +53,12 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'github-userid',
+        name: 'githubuserid',
         message: "Enter your Github user id",
     },
     {
         type: 'input',
-        name: 'github-link',
+        name: 'githublink',
         message: "Enter the link to your Github Profile",
     },
     {
