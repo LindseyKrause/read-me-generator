@@ -35,6 +35,8 @@ ${data.description}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Contributing](#Contributing)
+- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
@@ -52,9 +54,18 @@ ${data.creditstutorials}
 ${renderLicense(data)}
 ${data.licensedescription}
 
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
 ## Questions
+If you have any questions or need additional information, you can reach me at the following places:
+### Github
 ${data.githubuserid}
 ${data.githublink}
+### Email
 ${data.email}
  `
 }

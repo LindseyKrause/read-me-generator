@@ -66,6 +66,16 @@ const questions = [
         name: 'email',
         message: "Enter your email address",
     },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: "Enter information about how others can contribute to this project/application",
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: "Enter information on how to test this project/application",
+    },
 
 ];
 // // TODO: Create a function to write README file
