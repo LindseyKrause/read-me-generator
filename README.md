@@ -1,4 +1,4 @@
-# read-me-generator
+# Read-Me-Generator
 ![Screen Shot 2021-05-15 at 10 40 01 PM](https://user-images.githubusercontent.com/79954805/118386752-8c7fac80-b5ce-11eb-9174-94a10dd788f6.png)
 
 
