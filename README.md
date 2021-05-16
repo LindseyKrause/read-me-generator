@@ -10,6 +10,9 @@ Clone this repository and run the application with the command line.
 node index.js will runn application.
 
 ## Usage
+Walkthrough Video 1: https://drive.google.com/file/d/1cKXK4rALYEYYtBPUJPz0JHOeCf7McCAI/view
+
+Walkthrough Video 2: https://drive.google.com/file/d/17nsKbDseIWpI-xOxvheuKmJSxaZ923kL/view
 
 User will be prompted to answer the following items:
 1. What is your project name
